@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    
+</head>
+<body>
+
+    <p>Выбор колличества комнат</p>
+    <div id="category-tabs"></div>
+    <div class='filter-form'>
+        <label>
+            <span>поиск по адресу</span>
+            <input type='text' id='search' />
+        </label>
+        <label>
+            <span>Category</span>
+            <select id='category'></select>
+        </label>
+        <label>
+            <span>Price From</span>
+            <input type='number' id='price-from' value='0'/>
+        </label>
+        <label>
+            <span>Price To</span>
+            <input type='number' id='price-to' value='200000'/>
+        </label>
+        <label>
+            <span>Price From</span>
+            <input type='number' id='square-from' value='0'/>
+        </label>
+        <label>
+            <span>Price To</span>
+            <input type='number' id='square-to' value='300'/>
+        </label>
+        <button type='button' id ='init-search'>Filter</button>
+    </div>
+
+    <div id="items-list"></div>
+
+    <div id='pagination'></div>
+    
+    <script src='main.js'></script>
+</body>
+</html>
